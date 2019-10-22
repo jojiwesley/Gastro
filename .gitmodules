@@ -1,0 +1,3 @@
+[submodule "Gastro"]
+	path = Gastro
+	url = https://github.com/jojiwesley/Gastro.git

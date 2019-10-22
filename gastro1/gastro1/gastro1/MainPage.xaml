@@ -1,0 +1,36 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="gastro1.MainPage"
+             >
+                
+    <StackLayout BackgroundColor="White">
+        
+      
+            <BoxView BackgroundColor="Aqua" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center" Margin="0,50,0,20" CornerRadius="80"/>
+
+
+        <Entry x:Name="EntryUsuario" Placeholder="Usuario" HorizontalOptions="FillAndExpand" HeightRequest="45" WidthRequest="100" PlaceholderColor="#000000"/>
+        <Entry x:Name="EntrySenha"  Placeholder="Senha" HorizontalOptions="FillAndExpand" HeightRequest="45" WidthRequest="100" PlaceholderColor="#000000" />
+
+        <Grid RowSpacing="0">
+
+            <Button x:Name="ONButtonEntrar" Grid.Row="0"  Text="Login" Style="{StaticResource LoginButton}" HorizontalOptions="Center" Margin="0,10,0,0" />
+            <FlexLayout Grid.Row="1" Margin="0,0,0,0" >
+
+                <Button x:Name="ONButtonEsqueci" Text="Esqueci a Senha"  Style="{StaticResource RegistroButton}" HorizontalOptions="Start" />
+                <Button x:Name="ONButtonCadastrar" Text="Cadastrar"  Style="{StaticResource RegistroButton}" HorizontalOptions="End"/>
+
+                    </FlexLayout>
+            <FlexLayout Grid.Row="2" BackgroundColor="White">
+                <ImageButton Source="Social_Face.png" Style="{StaticResource SocialButtonImage}" />
+                <ImageButton Source="Social_Google.png" Style="{StaticResource SocialButtonImage}" />
+                <ImageButton Source="Social_Instagram.png" Style="{StaticResource SocialButtonImage}" />
+                <ImageButton Source="Social_Linkedin.png" Style="{StaticResource SocialButtonImage}"  />
+            </FlexLayout>
+        </Grid>
+
+    </StackLayout>
+</ContentPage>
